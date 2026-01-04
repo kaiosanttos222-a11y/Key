@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sua Key</title>
+</head>
+<body>
+
+<h1>✅ Key Gerada</h1>
+<p>Copie sua key abaixo:</p>
+
+<input type="text" id="key" value="KEY_GERADA_PELO_PLATOBOOST" readonly>
+<br><br>
+<button onclick="copiar()">COPIAR</button>
+
+<script>
+function copiar() {
+    let k = document.getElementById("key");
+    k.select();
+    document.execCommand("copy");
+    alert("Key copiada!");
+}
+</script>
+
+</body>
+</html>
